@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>jQuery To Do List</title>
+
+    <!-- STYLESHEETS -->
+        <!-- Main CSS  --> 
+    	<link rel="stylesheet" href="./stylesheets/style.css">
+</head>
+<body>
+    
+    <!-- Form For New Task Form -->
+    <form id="newTaskForm">
+        <label>New Item</label>
+        <input id="newItemInput" placeholder="New Task">
+        <button id="saveNewItem">Save</button>
+        <button id="cancel">Cancel</button>
+    </form>
+
+    <div class='new-item-header'>
+        <button href="#" class="pull-right pencil" id="newListItem" style="">New</button>
+    </div>
+
+    <div id="newList">
+        New List
+    </div>
+
+    <div class="panel">
+            In Progress
+            <ul class="list-group" id="currentList"></ul>
+    </div>
+
+    <div class="panel">
+            Archived
+            <ul class="list-group" id="archivedList"></ul>
+    </div>
+
+<!-- SCRIPT FILES -->
+    <!-- Main App -->
+    <script src="./scripts/app.js"></script>
+    <!-- jQuery Library -->
+    <script src="./scripts/libs/jQuery.min.js"></script>
+
+</body>
+</html>
